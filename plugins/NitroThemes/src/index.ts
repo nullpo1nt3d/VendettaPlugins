@@ -21,7 +21,7 @@ appearanceSettingsModule.setShouldSyncAppearanceSettings(false)
 // Set the previously set client theme
 if(storage.theme && storage.isEnabled) themeUtilsModule.updateBackgroundGradientPreset(storage.theme)
 
-// Unfreeze module
+// Unfreeze
 canUseNitroThemesModule.default = { ...canUseNitroThemesModule.default }
 
 // There is where the magic happens...
@@ -44,4 +44,3 @@ const patches = [
 ]
 
 export const onUnload = () => patches.forEach(p => p());
-
