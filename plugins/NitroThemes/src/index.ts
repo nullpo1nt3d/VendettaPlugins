@@ -6,15 +6,7 @@ const appearanceSettingsModule = findByProps("setShouldSyncAppearanceSettings")
 const canUseNitroThemesModule = find(m => m.default?.canUseClientThemes)
 const themeUtilsModule = findByProps("updateBackgroundGradientPreset")
 
-const { ClientThemesNewThemesExperiment } = findByProps("ClientThemesNewThemesExperiment") // old experiment
-const { ClientThemesMobileExperiment } = findByProps("ClientThemesMobileExperiment") // new experiment
-
 storage.isEnabled ??= false
-
-// Go through our experiments and toggle any pre-req
-// settings in order to do the patch.
-if(ClientThemesNewThemesExperiment) ClientThemesNewThemesExperiment.getCurrentConfig().hasNewClientThemes = true;
-if(ClientThemesMobileExperiment) ClientThemesMobileExperiment.getCurrentConfig().hasClientThemes = true;
 
 appearanceSettingsModule.setShouldSyncAppearanceSettings(false)
 
