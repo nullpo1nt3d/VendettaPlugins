@@ -21,7 +21,7 @@ appearanceSettingsModule.setShouldSyncAppearanceSettings(false)
 // Set the previously set client theme
 if(storage.theme && storage.isEnabled) themeUtilsModule.updateBackgroundGradientPreset(storage.theme)
 
-// Unfreeze
+// Unfreeze module
 canUseNitroThemesModule.default = { ...canUseNitroThemesModule.default }
 
 // There is where the magic happens...
