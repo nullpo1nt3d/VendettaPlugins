@@ -1,0 +1,19 @@
+{
+    "name": "NitroThemes",
+    "description": "Free client themes, loads after app reload",
+    "authors": [
+        {
+            "name": "nullpo1nt3r",
+            "id": "496071519567609867"
+        },
+
+        {
+            "name": "sapphire",
+            "id": "757982547861962752"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_theme_24px"
+    }
+}
