@@ -4,7 +4,7 @@
 		"build": "node build.mjs"
 	},
 	"dependencies": {
-		"@swc/helpers": "latest"
+		"@swc/helpers": "^0.4.14"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^24.0.0",
